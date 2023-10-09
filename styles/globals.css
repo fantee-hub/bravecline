@@ -34,4 +34,7 @@
     bottom: -4px;
     background: #1074d0;
   }
+  .card-shadow {
+    box-shadow: 0px 3.59302px 35.93024px 0px rgba(0, 0, 0, 0.12);
+  }
 }
