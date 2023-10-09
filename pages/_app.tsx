@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { Caveat_Brush } from "next/font/google";
+import Footer from "@/src/components/Footer";
 
 const copperGothic = localFont({
   src: [
@@ -34,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }
