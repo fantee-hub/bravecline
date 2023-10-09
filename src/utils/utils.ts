@@ -36,3 +36,22 @@ export const reviews = [
     name: "mabel",
   },
 ];
+
+export const heroes = [
+  {
+    id: crypto.randomUUID(),
+    img: "/assets/brave-bg.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/assets/hero2.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/assets/hero3.png",
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "/assets/hero4.png",
+  },
+];
