@@ -18,3 +18,21 @@ export const packages = [
     desc: "You can reserve your airline tickets through our services. Our partnerships and access to global flight booking systems allow us to secure seats for our clients on almost any flight to any destination worldwide. Our expertise lies in arranging flights for both economy and business class travelers,catering to both leisure and business travel needs.",
   },
 ];
+
+export const reviews = [
+  {
+    id: crypto.randomUUID(),
+    review: "“Thank you bravecline for making my travel process easy”",
+    name: "mabel",
+  },
+  {
+    id: crypto.randomUUID(),
+    review: "“Thank you bravecline for making my travel process easy”",
+    name: "mabel",
+  },
+  {
+    id: crypto.randomUUID(),
+    review: "“Thank you bravecline for making my travel process easy”",
+    name: "mabel",
+  },
+];
