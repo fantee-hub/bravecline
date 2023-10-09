@@ -15,7 +15,7 @@ import { heroes } from "@/src/utils/utils";
 
 const Hero = () => {
   return (
-    <div className="flex items-center text-white px-10 relative h-screen 5xl:h-[60vh] w-full">
+    <div className="flex items-center text-white lg:px-10 px-4 relative lg:h-screen h-[50vh] 5xl:h-[60vh] w-full">
       <div className="absolute w-full -z-50 top-0 left-0">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination, A11y]}
@@ -36,7 +36,7 @@ const Hero = () => {
                 <img
                   src={bg.img}
                   alt="images"
-                  className="w-full 5xl:h-[60vh] object-cover h-screen"
+                  className="w-full 5xl:h-[60vh] object-cover lg:h-screen h-[50vh]"
                 />
               </div>
             </SwiperSlide>
@@ -45,8 +45,8 @@ const Hero = () => {
       </div>
 
       <div className="max-w-[60rem] flex flex-col gap-5">
-        <div className="text-5xl font-bold">STUDY ABROAD</div>
-        <div className="text-3xl leading-[1.3]">
+        <div className="lg:text-5xl font-bold text-base">STUDY ABROAD</div>
+        <div className="lg:text-3xl lg:leading-[1.3] text-sm leading-[1.8]">
           Studying abroad applications used to be a complex process.
           <br /> We assist with eligibility criteria, course selection, and
           application procedures.
