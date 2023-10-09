@@ -7,10 +7,10 @@ import img4 from "../../../public/assets/serviceImage4.png";
 const ServiceContent = () => {
   return (
     <section>
-      <div className="flex flex-col gap-10 mb-10">
-        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap">
+      <div className="flex flex-col gap-10 mb-10 px-4 lg:px-0">
+        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap card-shadow sm:max-w-[500px] mx-auto xl:max-w-full">
           <img src={img1.src} alt="" className="" />
-          <div className="max-w-[40rem] mx-auto flex flex-col gap-4">
+          <div className="max-w-[40rem] mx-auto flex flex-col gap-4 xl:p-0 p-4 lg:text-base text-xs">
             <div className="font-black">
               Studying Abroad Simplified: Your Path to Global Education{" "}
             </div>
@@ -49,9 +49,9 @@ const ServiceContent = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap">
+        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap card-shadow sm:max-w-[500px] mx-auto xl:max-w-full">
           <img src={img2.src} alt="" className="" />
-          <div className="max-w-[40rem] mx-auto flex flex-col gap-4">
+          <div className="max-w-[40rem] mx-auto flex flex-col gap-4 xl:p-0 p-4 lg:text-base text-xs">
             <div className="font-black">
               Visa and Passport Assistance: Your Gateway to Global Travel
             </div>
@@ -91,9 +91,9 @@ const ServiceContent = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap">
+        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap card-shadow sm:max-w-[500px] mx-auto xl:max-w-full">
           <img src={img3.src} alt="" className="" />
-          <div className="max-w-[40rem] mx-auto flex flex-col gap-4">
+          <div className="max-w-[40rem] mx-auto flex flex-col gap-4 xl:p-0 p-4 lg:text-base text-xs">
             <div className="font-black">
               Effortless Ticketing: Your Passage to Worldwide Travel
             </div>
@@ -136,9 +136,9 @@ const ServiceContent = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-10 bg-neutral-100 flex-wrap">
+        <div className="flex items-center lg:gap-10 gap-2 bg-neutral-100 flex-wrap card-shadow sm:max-w-[500px] mx-auto xl:max-w-full">
           <img src={img4.src} alt="" className="" />
-          <div className="max-w-[40rem] mx-auto flex flex-col gap-4">
+          <div className="max-w-[40rem] mx-auto flex flex-col gap-4 xl:p-0 p-4 lg:text-base text-xs">
             <div className="font-black">
               Unforgettable Tours and Holiday Packages: Your Journey Starts Here
             </div>

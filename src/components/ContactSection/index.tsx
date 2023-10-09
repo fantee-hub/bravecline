@@ -21,8 +21,10 @@ const ContactSection = () => {
             className=" h-[574px] w-full mx-auto"
           ></iframe>
         </div>
-        <div className="flex flex-col gap-5 my-8 px-4">
-          <div className="text-5xl font-copperGothic">CONTACT US NOW!</div>
+        <div className="flex flex-col gap-5 my-8 px-4 lg:text-base text-xs">
+          <div className="lg:text-5xl text-2xl font-copperGothic">
+            CONTACT US NOW!
+          </div>
           <div className="flex items-center gap-2">
             <span className="w-10 h-10 flex justify-center items-center bg-slate-900 text-white rounded-lg text-xl">
               <BsTelephoneFill />

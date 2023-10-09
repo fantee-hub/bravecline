@@ -16,7 +16,7 @@ const Reviews = () => {
   });
   return (
     <section className="bg-slate-400 bg-opacity-10 border border-indigo-700 py-5 mb-10">
-      <div className="font-caveat text-5xl text-center uppercase leading-[1.4]">
+      <div className="font-caveat lg:text-5xl text-base text-center uppercase leading-[1.4]">
         <div>Our</div>
         <div>Travel Reviews</div>
       </div>
@@ -42,7 +42,7 @@ const Reviews = () => {
           className="w-full flex text-center"
         >
           {reviews.map((review) => (
-            <SwiperSlide key={review.id} className="text-3xl">
+            <SwiperSlide key={review.id} className="lg:text-3xl text-sm">
               <div className="">{review.review}</div>
               <div className="font-bold">{review.name}</div>
             </SwiperSlide>

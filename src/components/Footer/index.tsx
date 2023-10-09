@@ -10,9 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <section className="bg-slate-900 text-white">
-      <div className="flex justify-between flex-wrap p-14 font-sm">
-        <div className="flex flex-col gap-10">
+    <section className="bg-slate-900 text-white lg:text-base text-xs">
+      <div className="flex justify-between flex-wrap lg:p-14 px-4 py-14 font-sm lg:gap-0 gap-8">
+        <div className="flex flex-col gap-10 leading-[1.5]">
           <div>
             Bravecaline is a top-class travel and tours company delivering
             quality,
@@ -42,7 +42,9 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="text-2xl pb-5">Subscribe to our Newsletter</div>
+          <div className="lg:text-2xl pb-5 text-base">
+            Subscribe to our Newsletter
+          </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-xs">
@@ -60,7 +62,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-            <div className="flex items-center gap-5 text-xl justify-center">
+            <div className="flex items-center gap-5 text-xl lg:justify-center justify-start">
               <span className="w-10 h-10 bg-white flex items-center justify-center rounded-full text-slate-900">
                 <FaFacebook />
               </span>
