@@ -60,20 +60,20 @@ const Nav = () => {
           </span>
         </div>
         <div className="lg:hidden block" onClick={hamburgerHandler}>
-          <Squash />
+          <Squash toggled={toggle} />
         </div>
       </nav>
       <Collapse isOpened={toggle}>
         <div>
           <ul className="flex items-center flex-col text-base gap-5 w-full bg-white py-4">
-            <Link href="/">
+            <Link href="/" onClick={() => setToggle(false)}>
               <li
                 className={`${pathname === "/" ? "nav-active" : ""} relative`}
               >
                 HOME
               </li>
             </Link>
-            <Link href="/services">
+            <Link href="/services" onClick={() => setToggle(false)}>
               <li
                 className={`${
                   pathname == "/services" ? "nav-active" : ""
@@ -82,7 +82,7 @@ const Nav = () => {
                 SERVICES
               </li>
             </Link>
-            <Link href="/contact-us">
+            <Link href="/contact-us" onClick={() => setToggle(false)}>
               <li
                 className={`${
                   pathname == "/contact-us" ? "nav-active" : ""
