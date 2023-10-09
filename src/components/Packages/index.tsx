@@ -3,7 +3,7 @@ import { packages } from "@/src/utils/utils";
 
 const Packages = () => {
   return (
-    <section className="py-14">
+    <section className="pt-14 pb-20">
       <div className="font-caveat text-5xl text-center flex flex-col gap-5">
         <div>OUR TRAVELING</div>
         <div className="font-centuryGothic font-bold">PACKAGES</div>
