@@ -22,7 +22,7 @@ const caveatBrush = Caveat_Brush({
 const centuryGothic = localFont({
   src: [
     {
-      path: "../public/fonts/GOTHICB.ttf",
+      path: "../public/fonts/Century Gothic.ttf",
     },
   ],
   variable: "--centuryGothic",
