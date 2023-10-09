@@ -12,7 +12,7 @@ const Nav = () => {
       <div>
         <img src={logo.src} alt="logo" />
       </div>
-      <div>
+      <div className="hidden lg:block">
         <ul className="flex items-center gap-20 text-xl">
           <Link href="/">
             <li className={`${pathname === "/" ? "nav-active" : ""} relative`}>

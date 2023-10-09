@@ -52,11 +52,11 @@ const Footer = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="w-96 h-3.5 p-4 outline-none bg-white text-slate-900"
+                className="lg:w-96 w-full h-3.5 p-4 outline-none bg-white text-slate-900"
               />
             </div>
             <div>
-              <button className="bg-blue-300 w-96 h-8 rounded outline-none">
+              <button className="bg-blue-300 lg:w-96 w-full h-8 rounded outline-none">
                 Subscribe
               </button>
             </div>
