@@ -34,6 +34,7 @@ const config: Config = {
     fontFamily: {
       copperGothic: ["var(--copper-gothic)", "sans-serif"],
       caveat: ["var(--font-caveat)", "sans-serif"],
+      centuryGothic: ["var(--centuryGothic)", "sans-serif"],
     },
     extend: {
       backgroundImage: {

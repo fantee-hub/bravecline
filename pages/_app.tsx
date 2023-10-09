@@ -18,11 +18,19 @@ const caveatBrush = Caveat_Brush({
   weight: "400",
   variable: "--font-caveat",
 });
+const centuryGothic = localFont({
+  src: [
+    {
+      path: "../public/fonts/GOTHICB.ttf",
+    },
+  ],
+  variable: "--centuryGothic",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`${copperGothic.variable} ${caveatBrush.variable} font-copperGothic`}
+      className={`${copperGothic.variable} ${caveatBrush.variable} ${centuryGothic.variable} font-copperGothic`}
     >
       <Nav />
       <Component {...pageProps} />
