@@ -39,6 +39,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "hero-bg": "url('../public/assets/brave-bg.png')",
+        "service-hero": "url('../public/assets/services.png')",
       },
     },
   },
