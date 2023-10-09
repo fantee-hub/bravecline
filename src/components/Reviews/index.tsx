@@ -15,7 +15,7 @@ const Reviews = () => {
     isEnd: true,
   });
   return (
-    <section className="bg-slate-400 bg-opacity-10 border border-indigo-700 py-5 mb-7">
+    <section className="bg-slate-400 bg-opacity-10 border border-indigo-700 py-5 mb-10">
       <div className="font-caveat text-5xl text-center uppercase leading-[1.4]">
         <div>Our</div>
         <div>Travel Reviews</div>
