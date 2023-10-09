@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Nav from "@/src/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <main className={`${inter.className}`}>Hello</main>;
+  return (
+    <main className={`${inter.className}`}>
+      <Nav />
+    </main>
+  );
 }
