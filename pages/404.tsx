@@ -8,7 +8,6 @@ const Custom404 = () => {
       <Head>
         <title>Page not Found - BRAVECLINE</title>
       </Head>
-      <Nav />
       <div className="w-full h-[50vh] flex justify-center items-center text-center">
         <div>
           <h1 className="md:text-[60px] font-black text-[40px]">4😟4 Error</h1>

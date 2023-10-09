@@ -23,4 +23,15 @@
   body {
     @apply font-normal max-w-[2200px] mx-auto;
   }
+  .nav-active::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 2px;
+    background-color: white;
+    bottom: -4px;
+    background: #1074d0;
+  }
 }

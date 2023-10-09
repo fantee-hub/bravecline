@@ -5,9 +5,5 @@ import Nav from "@/src/components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <main>
-      <Nav />
-    </main>
-  );
+  return <main></main>;
 }
