@@ -21,6 +21,6 @@
     cursor: not-allowed;
   }
   body {
-    @apply text-white font-normal max-w-[2200px] mx-auto;
+    @apply font-normal max-w-[2200px] mx-auto;
   }
 }
