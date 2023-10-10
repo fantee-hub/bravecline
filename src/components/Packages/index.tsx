@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { packages } from "@/src/utils/utils";
 
 const Packages = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <section className="lg:pt-14 pt-10 pb-20 px-4 lg:px-0">
       <div className="font-caveat lg:text-5xl text-base text-center flex flex-col lg:gap-5 gap-2">
@@ -23,11 +24,18 @@ const Packages = () => {
             </div>
             <div className="p-4 text-sm pb-14">
               <div className="pb-3 font-bold">{p.title}</div>
-              <div className="leading-[1.8] lg:text-base text-xs">{p.desc}</div>
+              <div className="leading-[1.8] lg:text-base text-xs">
+                {isExpanded
+                  ? p.desc
+                  : p.desc.split(" ").slice(0, 20).join(" ") + "..."}
+              </div>
             </div>
             <div className="absolute bottom-4 left-4">
-              <button className="bg-slate-900 rounded text-white outline-none p-1">
-                READ MORE
+              <button
+                className="lg:bg-slate-900 bg-white lg:text-base text-xs rounded lg:text-white text-slate-900 outline-none p-1"
+                onClick={() => setIsExpanded((exp) => !exp)}
+              >
+                {isExpanded ? "SHOW LESS" : "READ MORE"}
               </button>
             </div>
           </div>
