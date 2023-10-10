@@ -3,9 +3,8 @@ import { packages } from "@/src/utils/utils";
 import ShowText from "../ShowText";
 
 const Packages = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <section className="lg:pt-14 pt-10 pb-20 px-4 lg:px-0">
+    <section className="lg:pt-14 pt-10 pb-20 px-4 lg:px-0" id="packages">
       <div className="font-caveat lg:text-5xl text-base text-center flex flex-col lg:gap-5 gap-2">
         <div>OUR TRAVELING</div>
         <div className="font-centuryGothic font-bold">PACKAGES</div>

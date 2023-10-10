@@ -5,14 +5,27 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Squash } from "hamburger-react";
 import { Collapse } from "react-collapse";
+import toast from "react-hot-toast";
 
 const Nav = () => {
   const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const hamburgerHandler = () => {
     setToggle(!toggle);
   };
   console.log(pathname);
+
+  const handleSearch = (e: any) => {
+    e.preventDefault();
+    const sectionId = document.getElementById(searchQuery);
+    console.log(sectionId);
+    if (sectionId) {
+      sectionId.scrollIntoView({ behavior: "smooth" });
+    } else {
+      toast.error(`No matching section found for "${searchQuery}"`);
+    }
+  };
   return (
     <>
       <nav className="bg-slate-900 text-white flex items-center justify-between h-[70px] overflow-hidden py-4 lg:px-5 px-2 gap-5 lg:gap-0">
@@ -49,15 +62,19 @@ const Nav = () => {
           </ul>
         </div>
         <div className="relative">
-          <input
-            type="search"
-            name="search"
-            id="search"
-            className="lg:w-44 lg:h-14 w-40 h-10 border-[2px] border-white rounded-full bg-inherit outline-none px-4"
-          />
-          <span className="absolute top-1/2 -translate-y-1/2 right-4 text-3xl">
-            <BiSearch />
-          </span>
+          <form onSubmit={handleSearch}>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              className="lg:w-44 lg:h-14 w-40 h-10 border-[2px] border-white rounded-full bg-inherit outline-none px-4"
+              onChange={(e) => setSearchQuery(e.target.value)}
+              value={searchQuery}
+            />
+            <span className="absolute top-1/2 -translate-y-1/2 right-4 text-3xl">
+              <BiSearch />
+            </span>
+          </form>
         </div>
         <div className="lg:hidden block" onClick={hamburgerHandler}>
           <Squash toggled={toggle} />

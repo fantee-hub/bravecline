@@ -3,7 +3,10 @@ import abroad from "../../../public/assets/study-abroad.png";
 
 const Study = () => {
   return (
-    <section className="pt-10 bg-slate-400 bg-opacity-5 pb-20 px-4 lg:px-0">
+    <section
+      className="pt-10 bg-slate-400 bg-opacity-5 pb-20 px-4 lg:px-0"
+      id="study abroad"
+    >
       <div className="font-caveat lg:text-5xl text-base text-center">
         <div>STUDY ABROAD</div>
         <div>Are you willing to futher your studies abroad?</div>
