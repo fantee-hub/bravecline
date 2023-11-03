@@ -63,6 +63,7 @@ export const faqs = [
     answer:
       "We offer free application processing support to prospective international students, that is, NO agency fees are charged.",
     buttonText: "Get Started",
+    link: "/contact-us",
   },
   {
     id: crypto.randomUUID(),
@@ -70,6 +71,7 @@ export const faqs = [
     answer:
       "To prospective students who require guidance with their study plans to the UK, USA, Canada and Australia.",
     buttonText: "Book a Consultation",
+    link: "/consultation",
   },
   {
     id: crypto.randomUUID(),
@@ -77,6 +79,7 @@ export const faqs = [
     answer:
       "What is next after acceptance into your choice school? Come ask our experienced professionals all the questions you may have to start your DIY Post-Offer journey. .",
     buttonText: "Join Our Visa Counseling Session",
+    link: "/contact-us",
   },
   {
     id: crypto.randomUUID(),
@@ -84,5 +87,6 @@ export const faqs = [
     answer:
       "We offer free pickup services to students who secure admission through our support, based on the availability of our Post-arrival team.",
     buttonText: "Get Started",
+    link: "/contact-us",
   },
 ];

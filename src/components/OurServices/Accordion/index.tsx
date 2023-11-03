@@ -1,6 +1,7 @@
 import React from "react";
 import { Collapse } from "react-collapse";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
+import Link from "next/link";
 
 const Accordion = ({
   children,
@@ -9,6 +10,7 @@ const Accordion = ({
   num,
   title,
   btn,
+  url,
 }: any) => {
   const isOpen = num === currentOpen;
   const handleToggle = () => {
@@ -39,9 +41,11 @@ const Accordion = ({
           {children}
         </div>
         <div className="pt-5">
-          <button className="h-12 bg-slate-900 flex items-center justify-center rounded-lg outline-none text-zinc-100 px-4 lg:text-base text-sm">
-            {btn}
-          </button>
+          <Link href={url}>
+            <button className="h-12 bg-slate-900 flex items-center justify-center rounded-lg outline-none text-zinc-100 px-4 lg:text-base text-sm">
+              {btn}
+            </button>
+          </Link>
         </div>
       </Collapse>
     </div>

@@ -22,6 +22,7 @@ const OurServices = () => {
               num={index}
               title={item.title}
               btn={item.buttonText}
+              url={item.link}
             >
               {item.answer}
             </Accordion>
