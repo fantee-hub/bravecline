@@ -16,14 +16,16 @@ const Accordion = ({
   };
   return (
     <div
-      onClick={handleToggle}
       className={`lg:p-8 p-4 cursor-pointer ${
         isOpen
           ? "bg-gray-50 rounded-2xl border border-gray-200"
           : " bg-white border-b border-gray-200"
       }`}
     >
-      <div className="flex justify-between lg:gap-3 gap-0 relative">
+      <div
+        className="flex justify-between lg:gap-3 gap-0 relative items-center"
+        onClick={handleToggle}
+      >
         <div className="text-gray-900 lg:text-xl text-sm font-semibold sm:max-w-[38rem] max-w-[17rem]">
           {title}
         </div>
