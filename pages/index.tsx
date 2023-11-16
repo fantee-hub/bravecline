@@ -4,8 +4,7 @@ import Study from "@/src/components/Study";
 import Packages from "@/src/components/Packages";
 import Reviews from "@/src/components/Reviews";
 import OurServices from "@/src/components/OurServices";
-
-const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
 
 export default function Home() {
   return (
